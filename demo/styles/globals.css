@@ -34,11 +34,6 @@ h1 {
 
 }
 
-body {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-}
 
 h1 {
     position: relative;
