@@ -55,7 +55,7 @@ const AddArticleButton = ({ openModal }: IAddArticleButton) => {
             }
             {showModal &&
                 <>
-                    <div id="add" className={styles.modal}>
+                    <div id="edit" className={styles.modal}>
                         <div className={styles.modalContent}>
                             <div className={styles.modalContent__first}>
                                 <ArticleEdit isEdit={true} article={newArticle} editArticle={saveData} />

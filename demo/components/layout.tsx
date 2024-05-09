@@ -1,11 +1,12 @@
 import styles from '../styles/layout.module.scss'
-import NavigationBar from '@/ui/molecules/NavigationBar'
+import NavigationBar from '../ui/molecules/NavigationBar'
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Image from 'next/image';
-import imageExample from '../public/next.svg';
+import imageExample from './public/next.svg';
 import Head from 'next/head';
+import React from 'react';
   
 export default function Layout ({ children } : Partial<any>) {
     const [response , setResponse] = useState([]);
