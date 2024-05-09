@@ -1,6 +1,7 @@
-import { Labels, LocalStorageKeys } from "@/core/configs/configs";
+import { Labels, LocalStorageKeys } from "../../core/configs/configs";
 import styles from '../../styles/Atom.module.scss';
 import { IArticleActions } from "../ui-types";
+import React from "react";
 
 const DeleteArticleButton = ({ deleteArticle } : IArticleActions ) => {
     return (
