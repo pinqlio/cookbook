@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Image from 'next/image';
-import imageExample from './public/next.svg';
+import imageExample from '../public/next.svg';
 import Head from 'next/head';
 import React from 'react';
   
@@ -38,14 +38,14 @@ export default function Layout ({ children } : Partial<any>) {
             <meta property='og:type' content='website'/>
         </Head>
         <div style={{ display: 'flex', alignItems: 'center' , backgroundColor : '#004E96'}}>
-            <Image 
+            {/* <Image 
                 className='ml-2  '
                 src={imageExample}
                 alt='user random picture'
                 width={100}
                 height={100}
-            /> 
-            {/* <span className='ml-4 '>Cookbook</span> */}
+            />  */}
+            <span className='ml-2 text-2xl text-white'>Cookbook</span>
         </div>
 
         <nav>

@@ -13,8 +13,9 @@ import TextInput from "../atoms/TextInputs";
 const LoginForm = () => {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('')
+    const [showError, setShowError] = useState(false);
     const router = useRouter();
- 
+    
     const dispatch = useAppDispatch();
     const loginService = LoginService.getInstance()
     console.log(loginService)
@@ -23,11 +24,13 @@ const LoginForm = () => {
         event.preventDefault();
         console.log(login, password)
         const loginState = await loginService.login(login, password)
-         console.log(loginState)
+        console.log(loginState)
         dispatch(changeAuthState(loginState))
         console.log("loginState", loginState)
         if (loginState.state) {
             router.push('/articles')
+        }else {
+            setShowError(true);
         }
     }
 
@@ -39,7 +42,7 @@ const LoginForm = () => {
         setPassword(value);
     }
 
-    const errorTestID = TestIDs.ERROR
+    // const errorTestID = TestIDs.ERROR
 
     return (
     <div className={styles.container}>
@@ -55,7 +58,11 @@ const LoginForm = () => {
                 <div className={styles.logBtn}>
                     <SubmitButton id="submit-login"  />
                 </div>
-                <div data-testid={errorTestID} />
+                {/* <div data-testid={errorTestID}> */}
+                    {showError && (
+                    <span style={{ color: 'red' }}>Invalid Username or Password. Please try again.</span>
+                    )}
+                {/* </div>  */}
             </form>
         </section>
         </div>

@@ -41,7 +41,6 @@ class LoginWithMock implements ILoginStrategy {
 
 class LoginWithGQL implements ILoginStrategyGQL {
     async gqlLogin(user: string, password: string) {
-        
         const { data } = await client.query({
             query: gql`
             query {
@@ -59,11 +58,15 @@ class LoginWithGQL implements ILoginStrategyGQL {
         console.log(user , password)
         let loginState = {state: false, token: '', userProperties:[]}
         const checkUser = await this.gqlLogin(user,password)
-        console.log(checkUser)
+        console.log(checkUser) 
+        if (checkUser.getUser === null || checkUser.getUser === "" || checkUser.getUser === undefined) {
+            return { state: false, token: Token(), userProperties: [] };
+        }
         if (checkUser && checkUser.getUser) {
             loginState =  { state: true, token: Token(), userProperties: checkUser.getUser.userProperties}
+           
         }
-        return loginState
+        return loginState;
 
     }
 }
