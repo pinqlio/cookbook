@@ -14,7 +14,7 @@ const LoginForm = () => {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('')
     const router = useRouter();
-
+ 
     const dispatch = useAppDispatch();
     const loginService = LoginService.getInstance()
     console.log(loginService)
@@ -23,7 +23,7 @@ const LoginForm = () => {
         event.preventDefault();
         console.log(login, password)
         const loginState = await loginService.login(login, password)
-        console.log(loginState)
+         console.log(loginState)
         dispatch(changeAuthState(loginState))
         console.log("loginState", loginState)
         if (loginState.state) {

@@ -17,7 +17,7 @@ enum UserBuilderMethod {
 }
 
 const LoginStrategies = {
-    [LoginStrategiesNames.MOCK]: new LoginWithMock(),
+    // [LoginStrategiesNames.MOCK]: new LoginWithMock(),
     [LoginStrategiesNames.GQL]: new LoginWithGQL(),
 
 }
@@ -26,7 +26,7 @@ const LoginStrategies = {
 
 const loginType = LoginStrategies[LoginStrategiesNames.GQL]
 
-//const loginType = LoginStrategies[LoginStrategiesNames.MOCK]
+// const loginType = LoginStrategies[LoginStrategiesNames.MOCK]
 
 
 

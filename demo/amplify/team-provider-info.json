@@ -1,0 +1,24 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-demo-dev-8da26-authRole",
+      "UnauthRoleArn": "arn:aws:iam::975049918059:role/amplify-demo-dev-8da26-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::975049918059:role/amplify-demo-dev-8da26-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-demo-dev-8da26-deployment",
+      "UnauthRoleName": "amplify-demo-dev-8da26-unauthRole",
+      "StackName": "amplify-demo-dev-8da26",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:975049918059:stack/amplify-demo-dev-8da26/9a47a850-0ceb-11ef-9820-0a0075aff9cf",
+      "AmplifyAppId": "dayhyvviqo0lr"
+    },
+    "categories": {
+      "auth": {
+        "demo": {}
+      },
+      "function": {
+        "demoCookbook": {},
+        "demo2a24F": {}
+      }
+    }
+  }
+}

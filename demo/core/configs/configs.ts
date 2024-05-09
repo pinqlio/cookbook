@@ -7,7 +7,8 @@ enum Labels {
     SUBMIT = 'Login',
     DELETE = "DELETE",
     EDIT = 'EDIT',
-    ADD_ARTICLE = "ADD_ARTICLE"
+    ADD_ARTICLE = "ADD_ARTICLE",
+    LOGOUT = 'logout'
 }
 enum TestIDs {
     errorMsg = "incorrect please try again",

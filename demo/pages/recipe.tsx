@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState, useMemo } from 'react'
-import { BurgerDirector } from '../core/burger-director'
-import { BurgerBuilder } from '../core/burger-builder'
-import { IStrategy, Kitchen } from '../core/burger-strategy'
-import { StrategiesNames, Strategies } from '../core/burger-config'
+// import { BurgerDirector } from '../core/burger-director'
+// import { BurgerBuilder } from '../core/burger-builder'
+// import { IStrategy, Kitchen } from '../core/burger-strategy'
+// import { StrategiesNames, Strategies } from '../core/burger-config'
 import { IArticle } from '@/ui/ui-types'
 import { ArticleDataService } from '@/core/data_service'
 
@@ -16,14 +16,14 @@ const Recipe = ({ initialData }: { initialData: Partial<any> }) => {
     const links = ArticleDataService.getInstance().getNavigation()
 
     let burgerType = null
-    let context: Kitchen
-    let currentBurgerType: StrategiesNames
-    const changeBurgerType = () => {
-        const newStrategy = currentBurgerType === StrategiesNames.HAMBURGER ? StrategiesNames.CHICKENBURGER : StrategiesNames.HAMBURGER
-        console.log("current burger type", currentBurgerType)
-        context.setStrategy(Strategies[currentBurgerType])
-        context.bakeSomething(burgerBuilder, burgerDirector)
-    }
+    // let context: Kitchen
+    // let currentBurgerType: StrategiesNames
+    // const changeBurgerType = () => {
+    //     const newStrategy = currentBurgerType === StrategiesNames.HAMBURGER ? StrategiesNames.CHICKENBURGER : StrategiesNames.HAMBURGER
+    //     console.log("current burger type", currentBurgerType)
+    //     context.setStrategy(Strategies[currentBurgerType])
+    //     context.bakeSomething(burgerBuilder, burgerDirector)
+    // }
     // console.log(comment_page)
     // let default_comment_pages_value =  Number(comment_page) ?? 10   //comment_page !== undefined ? Number(comment_page) : 10
 
@@ -33,10 +33,10 @@ const Recipe = ({ initialData }: { initialData: Partial<any> }) => {
     //     label = "Previous Recipes"
     //     link = "/recipes/breakfast/AnotherHealthyBreakfast"
     // }
-    const burgerBuilder = new BurgerBuilder()
-    const burgerDirector = new BurgerDirector()
-    burgerDirector.setBuilder(burgerBuilder)
-    useEffect(() => {
+    // const burgerBuilder = new BurgerBuilder()
+    // const burgerDirector = new BurgerDirector()
+    // burgerDirector.setBuilder(burgerBuilder)
+    // useEffect(() => {
         // console.log(recipes)
         // if (pid) {
 
@@ -45,9 +45,9 @@ const Recipe = ({ initialData }: { initialData: Partial<any> }) => {
             // ...ArticleDataService.getInstance().getArticle("1")
         // }
         // )
-        burgerDirector.buildHamburger()
-        console.log("getting the recipe", burgerBuilder.getRecipe())
-    }, [])
+    //     burgerDirector.buildHamburger()
+    //     console.log("getting the recipe", burgerBuilder.getRecipe())
+    // }, [])
 
     // useMemo(() => { 
     //   if(Object.keys(content).length > 0) {

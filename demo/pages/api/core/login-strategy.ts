@@ -1,5 +1,5 @@
 import { getMock } from "../../..//mocks";
-import { generateToken } from "./generateToken";
+import { Token } from "./generateToken";
 import { IUser, ILoginStrategy, ILoginStrategyGQL } from './types'
 import client from "../../../apollo-client"
 import { useQuery, gql } from '@apollo/client';
@@ -30,7 +30,7 @@ class LoginWithMock implements ILoginStrategy {
         }) 
         let loginState = { state: false, token: '', userProperties: []}
         if (checkUser){
-            loginState = { state:true, token: generateToken(), userProperties: []}
+            loginState = { state:true, token: Token(), userProperties: []}
         }
 
         return loginState;
@@ -61,7 +61,7 @@ class LoginWithGQL implements ILoginStrategyGQL {
         const checkUser = await this.gqlLogin(user,password)
         console.log(checkUser)
         if (checkUser && checkUser.getUser) {
-            loginState =  { state: true, token: generateToken(), userProperties: checkUser.getUser.userProperties}
+            loginState =  { state: true, token: Token(), userProperties: checkUser.getUser.userProperties}
         }
         return loginState
 

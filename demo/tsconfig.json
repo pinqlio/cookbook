@@ -35,5 +35,10 @@
 , "../[...recipes].tsx"  ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "baseUrl": "./src",
+    "paths": {
+      "*": ["*", "src/*"]
+    }
+
 }

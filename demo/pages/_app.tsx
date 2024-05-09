@@ -1,6 +1,6 @@
-// import { Amplify } from "@aws-amplify/core";
+import { Amplify } from "@aws-amplify/core";
 // import config from "./aws-exports";
-import "../styles/globals.css";
+import "@/styles/globals.css";
 import type { AppProps, NextWebVitalsMetric } from "next/app";
 import { wrapper } from "../store";
 import { Provider } from "react-redux";
@@ -9,11 +9,10 @@ import { useEffect } from "react";
 import { getFromStorageByKey } from "./api/core/local-storage";
 import { LocalStorageKeys } from "../core/configs/configs";
 import { changeAuthState } from "../store/authSlice";
-import { useAppDispatch } from "../hooks";
+import { useAppDispatch } from "../hooks/index";
 // import { store } from "./store";
 import de from "../lang/de.json";
 import en from "../lang/en.json";
-// import th from "../lang/th.json"
 import { IntlProvider, createIntl } from "react-intl";
 import { useRouter } from "next/router";
 // export default function App({ Component, pageProps }: AppProps) {
@@ -26,8 +25,7 @@ import { useRouter } from "next/router";
 
 const messages: any = {
   de,
-  en,
-  // th
+  en
 }
 
 export function reportWebVitals(metric: NextWebVitalsMetric) {

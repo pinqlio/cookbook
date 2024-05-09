@@ -16,6 +16,7 @@ export interface IArticle {
     createdAt: string
     allowComments: boolean
     status: 'public' | 'draft'
+    save : boolean
 }
 
 

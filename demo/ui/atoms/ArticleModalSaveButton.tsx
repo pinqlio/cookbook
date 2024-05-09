@@ -15,7 +15,6 @@ const ArticleModalSaveButton = ({ openModal } : IAddArticleButton ) => {
     const [showModal, setShowModal] = useState(false);
     const dispatch = useAppDispatch();
 
-
     const saveData = (data:IArticle) => { 
         console.log('data to save',data)
     }

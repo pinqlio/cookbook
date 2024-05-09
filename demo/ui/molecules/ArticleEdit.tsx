@@ -3,14 +3,24 @@ import ArticleModalSaveButton from '../atoms/ArticleModalSaveButton';
 import ArticleText from "../atoms/ArticleText";
 import ArticleTitle from "../atoms/ArticleTitle";
 import { IArticleEdit } from "../ui-types";
-
+import styles from '../../styles/Modal.module.scss';
 const ArticleEdit = ( { article, isEdit, editArticle} : IArticleEdit ) => {
     return (
+        
         <>
-            <ArticleTitle title={article.title} isEdit={true} />
-            <ArticleDescription description={article.description} isEdit={true} />
-            <ArticleText text={article.text} isEdit={true} />
+        <div className={styles.container} >
+            <h2>Title</h2>
+                <ArticleTitle title={article.title} isEdit={true} /> 
+            Description
+                <ArticleDescription description={article.description} isEdit={true} />
+            Text
+            <div>
+                <ArticleText text={article.text} isEdit={true}/>
+            </div>
+            
             <ArticleModalSaveButton openModal={editArticle}/>
+        </div>
+        
         </>
     )
 }

@@ -4,6 +4,7 @@ import AddArticleButton from '../atoms/AddArticle';
 import LinkToPage from '../atoms/LinkToPage';
 import Separator from '../atoms/Separator';
 import { INavigation } from '../ui-types';
+import LogoutBtn from '../atoms/LogoutBtn';
 
 const NavigationBar = ({ navigation }: { navigation: Array<INavigation> }) => {
     const router = useRouter();
@@ -26,6 +27,7 @@ const NavigationBar = ({ navigation }: { navigation: Array<INavigation> }) => {
             </div>
             <div>
                 <AddArticleButton openModal={() => {}} />
+                <LogoutBtn/>
             </div>
         </nav>
     );
