@@ -11,7 +11,7 @@
 // import BackToListButton from '../ui/atoms/BackToList'
 // import { useRouter } from 'next/router'
 // import { useEffect } from 'react'
-// import ArticleListElement from '@/ui/molecules/ArticleListElement'
+// import  from '@/ui/molecules/'
 // import  mock  from '../mocks/articles.json'
 
 // const ArticlePage : NextPage = ({ data, notFound } : any ) => {
@@ -26,7 +26,7 @@
     
 //     return (
 //         <section className={styles.section}>
-//             {/* <ArticleListElement article={data.article} isLoggedIn={false}/> */}
+//             {/* < article={data.article} isLoggedIn={false}/> */}
 //             <div>
 //                 <div className={styles.title}>
 //                     <BackToListButton backToList={ () => routeBack()} /> 

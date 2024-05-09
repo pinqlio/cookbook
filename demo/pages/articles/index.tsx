@@ -1,12 +1,13 @@
 import type { NextPage } from "next";
-import ArticleListElement from "@/ui/molecules/ArticleListElement";
+import ArticleListElement from "../../ui/molecules/ArticleListElement";
 import { Fragment } from "react";
 import { selectAuthState } from '../../store/authSlice'
 import { useAppSelector } from "../../hooks";
 import axios from "axios";
-import { IListPage } from "@/ui/ui-types";
+import { IListPage } from "../../ui/ui-types";
 import mockArt from '../../mocks/articles.json'
 import styles from '../../styles/ArticleList.module.scss'
+import React from "react";
 const ListPage : NextPage = ({ data, notFound } : IListPage ) => {
     const isLoggedIn = useAppSelector(selectAuthState);
     
