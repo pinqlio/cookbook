@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from '../../styles/Atom.module.scss';
 import { AiOutlineArrowLeft } from "react-icons/ai";
 const BackToListButton = ({ backToList } : { backToList : () => void}) => {

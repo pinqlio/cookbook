@@ -3,7 +3,7 @@ import PasswordInput from "../atoms/PasswordInput";
 import SubmitButton from "../atoms/SubmitButton";
 import { TestIDs } from "../../core/configs/configs";
 import { LoginService } from "../../pages/api/core/login.service";
-import { FormEvent, useState } from "react";
+import React, { FormEvent, useState } from "react";
 import { changeAuthState } from "../../store/authSlice"
 import { useRouter } from "next/router"
 import styles from "../../styles/LoginForm.module.scss"

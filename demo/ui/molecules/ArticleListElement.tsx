@@ -8,6 +8,7 @@ import DeleteArticleButton from '../atoms/DeleteArticle';
 import EditArticleButton from '../atoms/EditArticle';
 import { IArticle } from '../ui-types';
 import Link from 'next/link';
+import React from 'react';
 
 const ArticleListElement = ({ article, isLoggedIn }: { article: IArticle, isLoggedIn: boolean }) => {
     // console.log(article)

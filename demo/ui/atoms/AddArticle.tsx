@@ -9,7 +9,8 @@ import { changeArticleState, selectArticleState } from "../../store/articleSlice
 import ArticleEdit from "../molecules/ArticleEdit";
 import ArticleModalCloseButton from "./ArticleModalCloseButton";
 import { useSelector } from "react-redux";
-import { Labels } from "@/core/configs/configs";
+import { Labels } from "../../core/configs/configs";
+import React from "react";
 
 const AddArticleButton = ({ openModal }: IAddArticleButton) => {
     const [buttonLabel, setButtonState] = useState(Labels.SUBMIT);

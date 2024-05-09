@@ -4,6 +4,7 @@ import ArticleText from "../atoms/ArticleText";
 import ArticleTitle from "../atoms/ArticleTitle";
 import { IArticleEdit } from "../ui-types";
 import styles from '../../styles/Modal.module.scss';
+import React from "react";
 const ArticleEdit = ( { article, isEdit, editArticle} : IArticleEdit ) => {
     return (
         

@@ -1,4 +1,4 @@
-import { Labels, LocalStorageKeys } from "@/core/configs/configs";
+import { Labels, LocalStorageKeys } from "../../core/configs/configs";
 import styles from '../../styles/Atom.module.scss';
 import { useState } from "react";
 import ArticleDescription from "./ArticleDescription";
@@ -7,8 +7,9 @@ import ArticleModalSaveButton from './ArticleModalSaveButton';
 import ArticleText from "./ArticleText";
 import ArticleTitle from "./ArticleTitle";
 import ArticleEdit from '../molecules/ArticleEdit';
-import { ArticleState, changeArticleState } from "@/store/articleSlice";
+import { ArticleState, changeArticleState } from "../../store/articleSlice";
 import { useAppDispatch } from "../../hooks";
+import React from "react";
 const EditArticleButton = ({ editArticle, article } :{ editArticle : () => void, article : ArticleState }) => {
     const [showModal, setShowModalState] = useState(false);
     const dispatch = useAppDispatch();

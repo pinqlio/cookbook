@@ -1,13 +1,14 @@
 import { useEffect ,useState } from "react";
 import { Labels} from '../../core/configs/configs'
-import { LocalStorageKeys } from "@/core/configs/configs";
+import { LocalStorageKeys } from "../../core/configs/configs";
 import styles from '@/styles/Atom.module.scss'
 import Link from "next/link";
-import { useAppDispatch, useAppSelector } from "@/hooks";
+import { useAppDispatch, useAppSelector } from "../../hooks";
 import {changeAuthState, selectAuthState } from '../../store/authSlice';
 import ArticleEdit from "../molecules/ArticleEdit"; 
 import ArticleModalCloseButton from "./ArticleModalCloseButton";
 import { IAddArticleButton, IArticle } from "../ui-types";
+import React from "react";
 
 const ArticleModalSaveButton = ({ openModal } : IAddArticleButton ) => {
     const [buttonLabel , setButtonLabel] = useState(Labels.SUBMIT);
