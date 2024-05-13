@@ -57,11 +57,11 @@ const AddArticleButton = ({ openModal }: IAddArticleButton) => {
                 <>
                     <div id="edit" className={styles.modal}>
                         <div className={styles.modalContent}>
+                            <div className={styles.modalContent_x}>
+                                <ArticleModalCloseButton closeModal={() => setModalState(false)} />
+                            </div>
                             <div className={styles.modalContent__first}>
                                 <ArticleEdit isEdit={true} article={newArticle} editArticle={saveData} />
-                            </div>
-                            <div>
-                                <ArticleModalCloseButton closeModal={() => setModalState(false)} />
                             </div>
                         </div>
                     </div>

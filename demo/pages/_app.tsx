@@ -25,15 +25,13 @@ import { useRouter } from "next/router";
 
 const messages: any = {
   de,
-  en
-}
+  en,
+};
 
 export function reportWebVitals(metric: NextWebVitalsMetric) {
   //console.log(metric)
-
   // const body = JSON.stringify(metric)
   // const url = 'https://example.com/analytics'
-
   // if (navigator.sendBeacon) {
   //   navigator.sendBeacon(url, body)
   // } else {
@@ -52,22 +50,19 @@ export function reportWebVitals(metric: NextWebVitalsMetric) {
 //   })
 // }
 
-
-
 export default function CookBook({ Component, pageProps }: AppProps) {
   const { store } = wrapper.useWrappedStore(pageProps);
 
   useEffect(() => {
-    const authFromStorage = getFromStorageByKey(LocalStorageKeys.LOGIN)
+    const authFromStorage = getFromStorageByKey(LocalStorageKeys.LOGIN);
 
     if (authFromStorage) {
       store.dispatch(changeAuthState(authFromStorage));
     }
-
-  }, [store])
+  }, [store]);
 
   // const { locale } = useRouter();
-  const locale = 'en'; // Set your desired locale here
+  const locale = "en"; // Set your desired locale here
 
   const intl = createIntl({
     locale,
@@ -80,10 +75,10 @@ export default function CookBook({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       <Layout>
-        <IntlProvider locale={locale} messages={messages[locale]} >
+        <IntlProvider locale={locale} messages={messages[locale]}>
           <Component {...pageProps} />
         </IntlProvider>
       </Layout>
     </Provider>
-  )
+  );
 }

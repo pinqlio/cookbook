@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle `
+const GlobalStyle = createGlobalStyle`
     body { 
         background-color : #ebebeb ; 
         min-height : 100vh;
@@ -9,15 +9,15 @@ const GlobalStyle = createGlobalStyle `
         margin-top : 0 ; 
         font-family : Verdana;
     }
-`
+`;
 
-const StyledPage : NextPage = () => {
-    return (
-        <>
-        <GlobalStyle />
-        <div> This page will be styled with global styles </div>
-        </>
-    )
-} 
+const StyledPage: NextPage = () => {
+  return (
+    <>
+      <GlobalStyle />
+      <div> This page will be styled with global styles </div>
+    </>
+  );
+};
 
 export default StyledPage;

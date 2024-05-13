@@ -7,4 +7,5 @@ it('user should be able to log in', () => {
 
   // submit the form
   cy.get('button').contains('Login').click()
-}) 
+})
+  

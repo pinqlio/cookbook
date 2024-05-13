@@ -1,24 +1,24 @@
 import type { NextPage } from "next";
-import Link from "next/link"
-import styles from "../styles/LoginForm.module.scss"
-import LoginForm from "../ui/molecules/LoginForm"
+import Link from "next/link";
+import styles from "../styles/LoginForm.module.scss";
+import LoginForm from "../ui/molecules/LoginForm";
 import { Provider } from "react-redux";
 import { store } from "@/store";
 import Separator from "@/ui/atoms/Separator";
 
 const LoginPage: NextPage = () => {
-    return (
+  return (
     <>
-    <div>
+      <div>
         <article className="content">
-            <Provider store={store}>
-                <LoginForm />
-            </Provider>
-            <Separator/>
+          <Provider store={store}>
+            <LoginForm />
+          </Provider>
+          <Separator />
         </article>
-    </div>
+      </div>
     </>
-    )
-}
+  );
+};
 
-export default LoginPage
+export default LoginPage;

@@ -1,11 +1,7 @@
-import styles from '../../styles/Atom.module.scss';
-
+import styles from "../../styles/Atom.module.scss";
 
 const ArticleModalTitle = ({ text }: { text: string }) => {
-    return (
-        <span className={styles.text}>{text}</span>
-    )
-}
+  return <span className={styles.text}>{text}</span>;
+};
 
-
-export  default ArticleModalTitle;
+export default ArticleModalTitle;
