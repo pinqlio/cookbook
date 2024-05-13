@@ -40,9 +40,6 @@ export const authSlice: any = createSlice({
 
 export default authSlice.reducer;
 export const { changeAuthState } = authSlice.actions;
-
-// add selctAuthState
-
 export const selectAuthState = (state: RootState) => {
   return typeof state?.auth?.auth === "string"
     ? JSON.parse(state.auth?.auth).state
