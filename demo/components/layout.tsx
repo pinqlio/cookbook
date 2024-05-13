@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import Image from "next/image";
-// import imageExample from '../public/next.svg';
 import Head from "next/head";
 import React from "react";
 
