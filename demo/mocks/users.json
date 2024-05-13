@@ -1,7 +1,0 @@
-[
-    {
-        "user"   :  "testUser",
-        "password"   :  "asdqwe123",
-        "userProperties" : ["PRODUCE_REGULAR_USER"]
-    }
-]
