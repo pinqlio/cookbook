@@ -1,12 +1,12 @@
 {
-    "bakingTopBunsPartWithSeeds" : " baking top bun with seeds",
-    "bakingTopBunsWithoutSeeds" : "baking top bun wothout seeds",
-    "bakingMeat" : "backing meat",
-    "bakingFish" : "backing fish",
-    "bakingChicken" : "backing chicken",
-    "prepareBurgerSouce" : "preparing Burger Souce",
-    "prepareFishSouce" : "preparing Fish Souce",
-    "prepareSpecialSouce" : "preparing Special Souce",
-    "bakingBottomBunsPart" : "backing bottom bun",
-    "grillBurgerWithCheese" : " grill burger with cheese"
+  "bakingTopBunsPartWithSeeds": " baking top bun with seeds",
+  "bakingTopBunsWithoutSeeds": "baking top bun wothout seeds",
+  "bakingMeat": "backing meat",
+  "bakingFish": "backing fish",
+  "bakingChicken": "backing chicken",
+  "prepareBurgerSouce": "preparing Burger Souce",
+  "prepareFishSouce": "preparing Fish Souce",
+  "prepareSpecialSouce": "preparing Special Souce",
+  "bakingBottomBunsPart": "backing bottom bun",
+  "grillBurgerWithCheese": " grill burger with cheese"
 }

@@ -14,7 +14,6 @@ const NavigationBar = ({ navigation }: { navigation: Array<INavigation> }) => {
       <div>
         {navigation &&
           navigation.map((navElement: INavigation) => {
-            console.log("tt", navElement, router);
             return (
               <div
                 key={navElement.link}
